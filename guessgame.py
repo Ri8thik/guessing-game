@@ -1,8 +1,8 @@
 import random
-name = input("Hello there, what is your name: ")
-secretNumber = random.randint(1, 20)
+name = input("Hello there, what is your name: ")    #asking the user his/her name
+secretNumber = random.randint(1, 20)    #generating the random number
 print('Greetings, '+name+' ,I am thinking of a number between 1 and 20.')
-print('Take a guess:')
+print('Take a guess:')  #Giving the user upto 6 chances to huess the number
 for guessTaken in range(1, 7):
     guess = int(input())
     if guess < secretNumber:
